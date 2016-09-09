@@ -1,4 +1,7 @@
 package edu.gatech.oad.antlab.person;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *  A simple class for person 2
@@ -31,7 +34,21 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+		Random r = new Random();
+		List usedIndices = new ArrayList<>();
+		String ans = "";
+		while (ans.length() < input.length()) {
+			int randomIndex = r.nextInt(input.length());
+			System.out.println(randomIndex);
+			if (!usedIndices.contains(randomIndex)) {
+				System.out.println("checkpoint2");
+				usedIndices.add(randomIndex);
+				ans += input.substring(randomIndex, randomIndex + 1);
+			}
+			System.out.println("checkpoint4");
+			System.out.println(ans);
+		}
+	  	return ans;
 	}
 	/**
 	 * Return a string rep of this object
