@@ -31,8 +31,12 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
-	}
+        String string = input;
+        String temp = string.substring(0,2);
+        string = string.substring(2);
+        string = string + temp;
+        return string; 
+    }
 	
 	/**
 	 * Return a string rep of this object
