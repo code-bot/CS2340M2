@@ -1,21 +1,14 @@
-defaultTasks '<task>'
 
 apply plugin: 'java'
 
-dependencies {
+defaultTasks 'jar'
 
+dependencies {
+    compile files('lib/resources.jar')
 }
 
 jar {
     manifest {
-        attributes '<attribute>' : '______', <attribute>: '_______'
+        attributes 'Class-Path' : '../../lib/resources.jar', 'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain'
     }
 }
-
-/**
-compileJava      compiles and builds the project
-compileTest      compiles the unit tests for the project
-javadoc          creates the html documentation for the project
-clean            removes all the files created by this project
-jar              creates the executable jar file for this project
-**/
