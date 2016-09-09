@@ -3,7 +3,7 @@ defaultTasks '<task>'
 apply plugin: 'java'
 
 dependencies {
-    _____________
+
 }
 
 jar {
@@ -11,3 +11,11 @@ jar {
         attributes '<attribute>' : '______', <attribute>: '_______'
     }
 }
+
+/**
+compileJava      compiles and builds the project
+compileTest      compiles the unit tests for the project
+javadoc          creates the html documentation for the project
+clean            removes all the files created by this project
+jar              creates the executable jar file for this project
+**/

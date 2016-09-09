@@ -35,6 +35,7 @@ public class Person5 {
         String temp = string.substring(0,2);
         string = string.substring(2);
         string = string + temp;
+        return string; 
     }
 	
 	/**
