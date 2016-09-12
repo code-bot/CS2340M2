@@ -39,14 +39,14 @@ public class Person2 {
 		String ans = "";
 		while (ans.length() < input.length()) {
 			int randomIndex = r.nextInt(input.length());
-			System.out.println(randomIndex);
+			//System.out.println(randomIndex);
 			if (!usedIndices.contains(randomIndex)) {
-				System.out.println("checkpoint2");
+				//System.out.println("checkpoint2");
 				usedIndices.add(randomIndex);
 				ans += input.substring(randomIndex, randomIndex + 1);
 			}
-			System.out.println("checkpoint4");
-			System.out.println(ans);
+			//System.out.println("checkpoint4");
+			//System.out.println(ans);
 		}
 	  	return ans;
 	}
